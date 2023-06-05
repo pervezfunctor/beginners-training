@@ -8,7 +8,7 @@ int  main(){
     float farh,celcius;
     int lower=0,upper=100,step=20;
     farh=lower;
-    printf("farh\tcelcius\n");
+    printf("celcius\tfarh\n");
     while(celcius<=upper){
         farh=(celcius*9)/5+32;
         printf("%6.0f\t%6.0f\n",celcius,farh);
