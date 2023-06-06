@@ -1,6 +1,7 @@
 //
 // Created by technoidentity on 3/6/23.
 //program to print the corresponding celsius to fahrenheit table
+#include <stdio.h>
 int main()
 {
     float celsius, fahrenheit;
@@ -9,7 +10,6 @@ int main()
     lower=0;
     step=10;
     printf("celsius\tFahrenheit\n");
-    printf("-----------------\n");
     celsius=lower;
     while(celsius<=upper){
         fahrenheit=(celsius*9.0/5.0)+32.0;
