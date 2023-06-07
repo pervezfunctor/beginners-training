@@ -18,7 +18,7 @@ void reverse(char s[]) {
 
     }
 
-}
+}/*main function*/
 int main() {
     printf("Enter text: ");
     char inp[1000];
