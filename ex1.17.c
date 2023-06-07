@@ -1,20 +1,31 @@
 #include <stdio.h>
-#include <string.h>
-
 #define MAXLINE 1000
-#define MIN_LENGTH 80
-
-int main() {
+#define LONGLINE 80
+int get_input_line(char line[], int maxLine);
+int main(){
+    int len;
     char line[MAXLINE];
-
-    printf("Enter lines of text (Ctrl + D to exit):\n");
-
-    while (fgets(line, sizeof(line), stdin) != NULL) {
-        size_t len = strlen(line);
-        if (len > MIN_LENGTH) {
-            printf("%s", line);
-        }
-    }
-
+    while((len = get_input_line(line,MAXLINE)) > 0)
+        if(len > LONGLINE)
+            printf("%s",line);
     return 0;
 }
+int get_input_line(char s[],int lim)
+{
+   int c, i,j;
+    j= 0;
+    for (i=0;  (c=getchar())!=EOF && c!='\n'; ++i)
+        if(i < lim-2){
+
+            s[i] = c;
+            ++j;
+        }
+    if (c == '\n'){
+        s[j] = c;
+        ++j;
+        ++i;
+    }
+    s[i] = '\0';
+    return i;
+}
+
