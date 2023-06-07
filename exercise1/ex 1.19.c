@@ -1,4 +1,4 @@
-/*reverse program*/
+/*reverse program* using reverse functions/
 #include<stdio.h>
 void reverse(char s[]) {
     int len = 0;
