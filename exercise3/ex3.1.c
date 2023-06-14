@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//implement binary search
 int bin_search(int v[], int low, int high, int x) {
     while (low <= high) {
         int mid = low + (high - low) / 2;
