@@ -9,9 +9,9 @@ int h_toi(char * string){
     while (*string!='\0'){
         if(isdigit(*string)){
             digit=*string-'0';
-        } else if(*string>='a' && string <='f'){
+        } else if(*string>='a' && *string <='f'){
             digit=*string-'a'+10;
-        } else if (*string>='A'  && string<='F' ){
+        } else if (*string>='A'  && *string<='F' ){
             digit=*string-'A'+10;
         } else{
             return -1;
@@ -22,11 +22,8 @@ int h_toi(char * string){
     return value;
 }
 int main(){
-    char string[100];
-    printf("enter string:");
-    scanf("%S",string);
+    char string[]="1A2B";
     int decimalValue= h_toi(string);
-    printf("Hex %s\n",string);
-    printf("decimal %d\n",decimalValue);
+    printf(" %d\n",decimalValue);
     return 0;
 }
