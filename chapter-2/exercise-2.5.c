@@ -22,15 +22,15 @@ int any(char *s1,char *s2)
 }
 int main()
 {
-    char *s1[100];
-    char *s2[100];
+    char s1[100];
+    char s2[100];
     printf("enter the string s1:");
     scanf("%s",s1);
     printf("enter the string s2:");
     scanf("%s",s2);
     int idx = any(s1,s2);
     if(idx != -1) {
-        printf("First character matching  is at %d\n", idx);
+        printf("First character %c matching at index %d\n",s1[idx], idx);
     }
     return 0;
 }
