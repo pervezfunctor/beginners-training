@@ -7,9 +7,9 @@ void strcat(char *s,char *t);
 int main(){
     char s[100];
     char t[100];
-    printf("enter string1:%s",s);
+    printf("enter string1:");
     scanf("%s",s);
-    printf("enter string2:%s",t);
+    printf("enter string2:");
     scanf("%s",t);
     strcat(s,t);
     printf("concatenated string:%s",s);
