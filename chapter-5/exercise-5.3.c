@@ -3,7 +3,7 @@
 //
 //copies the string t to the end of s
 #include <stdio.h>
-void str_cat(char *s,char *t);
+void strcat(char *s,char *t);
 int main(){
     char s[100];
     char t[100];
@@ -11,11 +11,11 @@ int main(){
     scanf("%s",s);
     printf("enter string2:%s",t);
     scanf("%s",t);
-    str_cat(s,t);
+    strcat(s,t);
     printf("concatenated string:%s",s);
     return 0;
 }
-void str_cat(char *s,char *t){
+void strcat(char *s,char *t){
     while(*s){
         s++;
     }
