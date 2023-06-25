@@ -19,8 +19,7 @@ void escape(char s[], const char t[]) {
         }else{
             s[j] = t[i];
         }
-    }
-    s[j]= '\0';
+    }s[j]= '\0';
 }
 int main(){
     const char input[100];
