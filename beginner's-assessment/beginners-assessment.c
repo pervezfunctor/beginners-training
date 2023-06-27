@@ -2,24 +2,27 @@
 // Created by technoidentity on 27/6/23.
 //
 //1
+...c
 /*the size of int in C
-the size of the int in c is 4 bytes
+the size of the int in c is 4 bytes*/
 #include <stdio.h>
 int main(){
     printf("the size of int:%d",sizeof (int));
 }
-*/
+...
 
 //2
-/*type if arr and ptr in the following code snippet?
+//type if arr and ptr in the following code snippet?
+ ...c
 int arr[10];
-the type of arr is an array of int, where the arr[10] holds 10 integer values in contiguous memory location
+//the type of arr is an array of int, where the arr[10] holds 10 integer values in contiguous memory location
 int *ptr = arr;
-the type of ptr is pointer to int ,it holds the address of the first element, ptr point to the array and access its elements
- */
+//the type of ptr is pointer to int ,it holds the address of the first element, ptr point to the array and access its elements
+ ...
 
 //3
-/*#include <stdio.h>
+...c
+#include <stdio.h>
 #include <string.h>
 void reverse(char *s,int start,int end){
     if(start>=end)
@@ -38,10 +41,11 @@ int main(){
     printf("after reverse:%s\n",str);
     return 0;
 }
-*/
+...
 
 //4
-/*function which copies src array to dest array.
+...c
+//function which copies src array to dest array.
 #include <stdio.h>
 void cpy(int *dest, int *src, int *end) {
     while (src < end) {
@@ -64,12 +68,12 @@ int main() {
 
     return 0;
 }
-*/
+...
 
 //5
-/*function to copy standard input to standard output
+...c
+//function to copy standard input to standard output
 #include <stdio.h>
-
 void stdintostdout() {
     char input[100];
     fgets(input, sizeof(input), stdin);
@@ -81,10 +85,11 @@ int main() {
     stdintostdout();
     return 0;
 }
- */
+ ...
 
 //6
-/*program to count the number of vowels and consonants in a given string.
+...c
+//program to count the number of vowels and consonants in a given string.
 #include <stdio.h>
 #include <ctype.h>
 int main() {
@@ -111,10 +116,10 @@ int main() {
 
     return 0;
 }
-*/
+...
 
 //7
-/*
+...c
 #include <stdio.h>
 double expression(float x, int n) {
     float result = 1.0;
@@ -137,4 +142,4 @@ int main() {
     printf("Result: %.2f\n", result);
     return 0;
 }
-*/
+...
