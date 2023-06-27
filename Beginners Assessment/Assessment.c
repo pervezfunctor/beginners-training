@@ -1,6 +1,6 @@
 /* 1A:   The size of int in c is 4 bytes which is equivalent to 32bits .
      Since int in an integer type variable. So, the sizeof(int) simply implies the value of size of an integer.
-     Whether it is a 32-bit Machine or 64-bit machine, sizeof(int) will always return a value 4 as the size of an integer.
+     Whether it is a 32-bit Machine or 64-bit machine, sizeof(int) will always return a value 4 as the size of an integer.*/
 
 
 2A:   int arr[10];
@@ -9,8 +9,8 @@
         The array is points to pointer of an integer variable.
         The type of arr is an array of 10 integers (int[10]), and the type of ptr is a pointer to an integer (int*).
 
-
- 3A:    #include <stdio.h>
+ 3A:   ...c
+       #include <stdio.h>
        #include <string.h>
        void reverse(char *s, int start, int end) {
        if (start >= end)
@@ -29,10 +29,10 @@
         reverse(str, 0, strlen(str) - 1);
         printf("After reverse: %s\n", str);
         return 0;
-      }
+      }...
 
 
-4A:     #include <stdio.h>
+4A:     ...c#include <stdio.h>
         #include <string.h>
         void cpy(int *dest, int *src, int *end) {
            while (src != end) {
@@ -53,10 +53,11 @@
         {
         printf("%d ", dest[i]);
     }
-  }
+  }...
 
 
-5A:      #include <stdio.h>
+5A:      ...c
+         #include <stdio.h>
          void copyInpToOut()
          {
          char input[101]; //input is less than 100 characters
@@ -69,10 +70,11 @@
            {
            copyInpToOut();
            return 0;
-           }
+           }...
 
 
-6A:     #include <stdio.h
+6A:     ...c
+        #include <stdio.h
         #include <ctype.h>
         int main()
         {
@@ -94,9 +96,10 @@
     printf("Number of consonants: %d\n", cons);
     return 0;
 
-}
+}...
 
-7A:     #include <stdio.h>
+7A:     ...c
+       #include <stdio.h>
         double iteration(float x, int n) {
         double result = 1.0;
         double val = 1.0;
@@ -116,7 +119,6 @@
           float result = iteration(x, n);
           printf("Result: %.2f\n", result);
           return 0;
-    }
+    }...
 
 
-*/
