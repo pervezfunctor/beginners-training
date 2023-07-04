@@ -48,6 +48,12 @@ void cpy(int *dest, int *src, int *end) {
 
 5.
 ```
+#include <stdio.h>
+void main(){
+    char string[100];
+    scanf("%s", string);
+    printf("%s", string);
+}
 
 ```
 
